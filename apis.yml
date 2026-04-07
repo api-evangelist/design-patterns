@@ -1,13 +1,11 @@
 name: Design Patterns
-description: Reusable solutions to commonly occurring problems in software design,
-  providing templates for how to solve problems in various contexts. Organizations
-  adopt it to address specific technical or business challenges in their environments.
+description: Reusable solutions to commonly occurring problems in software design, providing templates for how to solve problems in various contexts. Organizations adopt it to address specific technical or business challenges in their environments.
 url: https://refactoring.guru/design-patterns
 tags:
-- Software Architecture
-- Best Practices
-- Object-Oriented Programming
-- Software Engineering
+  - Best Practices
+  - Object-Oriented Programming
+  - Software Architecture
+  - Software Engineering
 created: '2025-01-01'
 modified: '2026-03-16'
 apis: []
