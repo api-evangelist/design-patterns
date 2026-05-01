@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@vocab": "https://raw.githubusercontent.com/api-evangelist/design-patterns/main/vocabulary/design-patterns-vocabulary.json#",
+    "schema": "https://schema.org/"
+  },
+  "name": "Design Patterns Vocabulary",
+  "description": "Controlled vocabulary for the Gang of Four design patterns and core API design patterns.",
+  "version": "1.0.0",
+  "terms": [
+    { "term": "DesignPattern", "definition": "A reusable solution to a commonly occurring problem within a given context in software design." },
+    { "term": "CreationalPattern", "definition": "Pattern category concerned with object creation mechanisms." },
+    { "term": "StructuralPattern", "definition": "Pattern category concerned with class and object composition." },
+    { "term": "BehavioralPattern", "definition": "Pattern category concerned with communication between objects." },
+    { "term": "FactoryMethod", "definition": "Defines an interface for creating an object but lets subclasses decide which class to instantiate." },
+    { "term": "AbstractFactory", "definition": "Provides an interface for creating families of related or dependent objects." },
+    { "term": "Builder", "definition": "Separates construction of a complex object from its representation." },
+    { "term": "Prototype", "definition": "Creates new objects by copying an existing instance." },
+    { "term": "Singleton", "definition": "Ensures a class has only one instance and provides a global point of access to it." },
+    { "term": "Adapter", "definition": "Converts the interface of a class into another interface clients expect." },
+    { "term": "Bridge", "definition": "Decouples an abstraction from its implementation so the two can vary independently." },
+    { "term": "Composite", "definition": "Composes objects into tree structures to represent part-whole hierarchies." },
+    { "term": "Decorator", "definition": "Attaches additional responsibilities to an object dynamically." },
+    { "term": "Facade", "definition": "Provides a unified interface to a set of interfaces in a subsystem." },
+    { "term": "Flyweight", "definition": "Uses sharing to support large numbers of fine-grained objects efficiently." },
+    { "term": "Proxy", "definition": "Provides a surrogate or placeholder for another object to control access to it." },
+    { "term": "ChainOfResponsibility", "definition": "Passes a request along a chain of handlers until one handles it." },
+    { "term": "Command", "definition": "Encapsulates a request as an object, allowing parameterization, queueing, and undo." },
+    { "term": "Iterator", "definition": "Provides a way to access elements of a collection sequentially without exposing its representation." },
+    { "term": "Mediator", "definition": "Defines an object that encapsulates how a set of objects interact." },
+    { "term": "Memento", "definition": "Captures an object's internal state so it can be restored later." },
+    { "term": "Observer", "definition": "Defines a one-to-many dependency so observers are notified when the subject changes." },
+    { "term": "State", "definition": "Allows an object to alter its behavior when its internal state changes." },
+    { "term": "Strategy", "definition": "Defines a family of algorithms, encapsulates each one, and makes them interchangeable." },
+    { "term": "TemplateMethod", "definition": "Defines the skeleton of an algorithm, deferring some steps to subclasses." },
+    { "term": "Visitor", "definition": "Represents an operation to be performed on the elements of an object structure." },
+    { "term": "HATEOAS", "definition": "API design constraint where responses include links that drive client navigation." },
+    { "term": "IdempotencyKey", "definition": "Client-supplied identifier letting an API safely deduplicate retried requests." },
+    { "term": "Webhook", "definition": "API design pattern where the server delivers events by HTTP request to a consumer-supplied URL." },
+    { "term": "Saga", "definition": "Pattern for managing long-running distributed transactions through compensating actions." }
+  ]
+}

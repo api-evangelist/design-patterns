@@ -1,0 +1,83 @@
+name: Design Patterns Rules
+description: Guidance for selecting and applying classic Gang of Four and API design patterns.
+version: 1.0.0
+created: 2026-04-28
+modified: 2026-04-28
+rules:
+  - id: DP-001
+    name: Document the Forces Before Selecting a Pattern
+    severity: warning
+    description: Capture the problem context, constraints, and forces before naming a pattern as the solution.
+    rationale: Patterns are answers to specific forces; selecting one without articulating those forces leads to misuse.
+
+  - id: DP-002
+    name: Prefer Composition Over Inheritance
+    severity: warning
+    description: When extending behavior, prefer composition (Strategy, Decorator, Composite) over inheritance.
+    rationale: Inheritance hierarchies grow brittle; composition keeps relationships explicit and changeable.
+
+  - id: DP-003
+    name: Avoid Singleton for Mutable State
+    severity: error
+    description: Do not use the Singleton pattern to share mutable application state.
+    rationale: Singletons hide dependencies, complicate testing, and become hidden global state.
+
+  - id: DP-004
+    name: Apply Factory Method for Polymorphic Construction
+    severity: info
+    description: Use Factory Method when a class delegates the choice of concrete type to subclasses or strategies.
+    rationale: Centralizing construction keeps consumers decoupled from concrete implementations.
+
+  - id: DP-005
+    name: Use Adapter for Boundary Translation
+    severity: info
+    description: Place an Adapter at the boundary between a stable internal model and an external interface.
+    rationale: Adapters absorb churn from third-party APIs without leaking that churn inward.
+
+  - id: DP-006
+    name: Reach for Strategy Before Conditional Chains
+    severity: warning
+    description: Replace long if/else or switch chains over a type code with a Strategy or polymorphic dispatch.
+    rationale: Strategy makes the variation explicit and open to extension.
+
+  - id: DP-007
+    name: Observer Subscriptions Must Be Unsubscribable
+    severity: error
+    description: Any Observer registration must expose a symmetric unsubscribe path.
+    rationale: One-way subscriptions leak memory and cause callbacks against destroyed objects.
+
+  - id: DP-008
+    name: Decorator Order Matters
+    severity: warning
+    description: When stacking Decorators, document the order in which they are composed.
+    rationale: Authentication, logging, retry, and caching decorators behave differently depending on order.
+
+  - id: DP-009
+    name: Avoid God-Object Facades
+    severity: warning
+    description: Facades should expose a focused subsystem; do not let them expand into application-wide entry points.
+    rationale: An over-broad facade reintroduces the coupling the pattern was meant to remove.
+
+  - id: DP-010
+    name: Name the Pattern in Code Reviews
+    severity: info
+    description: Reference the pattern by name in code, comments, and reviews when applying one.
+    rationale: Shared vocabulary accelerates understanding and lets reviewers verify the fit.
+
+  - id: DP-011
+    name: Prefer Iterator Abstractions Over Index Loops
+    severity: info
+    description: Traverse collections through iterators or higher-order functions rather than index arithmetic.
+    rationale: Iterators encapsulate traversal and accommodate non-array collections without rewrites.
+
+  - id: DP-012
+    name: Use Command for Reversible Operations
+    severity: info
+    description: Model operations that need undo, queueing, or auditing as Command objects.
+    rationale: Command captures intent as data and supports replay, scheduling, and history.
+
+  - id: DP-013
+    name: Avoid Pattern Cargo Culting
+    severity: warning
+    description: Do not introduce a pattern unless the forces justifying it are present.
+    rationale: Patterns add structure and indirection that costs more than it returns when unwarranted.

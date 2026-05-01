@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "dp": "https://raw.githubusercontent.com/api-evangelist/design-patterns/main/vocabulary/design-patterns-vocabulary.json#"
+  },
+  "@type": "schema:TechArticle",
+  "@id": "https://github.com/api-evangelist/design-patterns",
+  "schema:name": "Design Patterns",
+  "schema:description": "Reusable solutions to commonly occurring problems in software design, including the Gang of Four catalog and core API design patterns.",
+  "schema:about": [
+    { "@id": "dp:DesignPattern" },
+    { "@id": "dp:CreationalPattern" },
+    { "@id": "dp:StructuralPattern" },
+    { "@id": "dp:BehavioralPattern" },
+    { "@id": "dp:Strategy" },
+    { "@id": "dp:Observer" },
+    { "@id": "dp:Adapter" },
+    { "@id": "dp:Decorator" },
+    { "@id": "dp:Facade" },
+    { "@id": "dp:HATEOAS" },
+    { "@id": "dp:IdempotencyKey" },
+    { "@id": "dp:Webhook" },
+    { "@id": "dp:Saga" }
+  ],
+  "schema:keywords": [
+    "Software Architecture",
+    "Best Practices",
+    "Object-Oriented Programming",
+    "Software Engineering"
+  ],
+  "schema:sameAs": "https://refactoring.guru/design-patterns",
+  "schema:dateCreated": "2025-01-01",
+  "schema:dateModified": "2026-04-28"
+}
