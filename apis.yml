@@ -37,7 +37,7 @@ apis:
       - type: Vocabulary
         url: >-
           https://raw.githubusercontent.com/api-evangelist/design-patterns/main/vocabulary/design-patterns-vocabulary.json
-      - type: JSON-LD
+      - type: JSONLD
         url: >-
           https://raw.githubusercontent.com/api-evangelist/design-patterns/main/json-ld/design-patterns.jsonld
 common:
@@ -45,7 +45,7 @@ common:
     url: https://refactoring.guru/design-patterns
   - type: Reference
     url: https://en.wikipedia.org/wiki/Software_design_pattern
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/api-evangelist
 maintainers:
   - FN: Kin Lane
