@@ -6,7 +6,19 @@ description: >-
   core API design patterns such as HATEOAS, idempotency keys, webhooks, and
   sagas.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/design-patterns.png
 tags:
   - Best Practices
   - Object-Oriented Programming
