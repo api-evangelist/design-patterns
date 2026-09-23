@@ -1,8 +1,8 @@
-name: Design Patterns Rules
+x-name: Design Patterns Rules
 description: Guidance for selecting and applying classic Gang of Four and API design patterns.
-version: 1.0.0
-created: 2026-04-28
-modified: 2026-04-28
+x-version: 1.0.0
+x-created: 2026-04-28
+x-modified: 2026-04-28
 rules:
   - id: DP-001
     name: Document the Forces Before Selecting a Pattern
